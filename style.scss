@@ -115,6 +115,12 @@ img {
   max-width: none;
 }
 
+span.date {
+  font-style: italic;
+  color: $gray;
+  float: right;
+}
+
 .date {
   font-style: italic;
   color: $gray;

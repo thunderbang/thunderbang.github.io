@@ -174,4 +174,4 @@ Actually, Sudalai is a true problem solver. He participated and won several Data
 8. Sudalai Rajkumar：动手去做，这实践中获取经验。
 
 ---
-The theme of these days: Keeping catching up!
+The theme of these days: Keep catching up!
