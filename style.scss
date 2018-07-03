@@ -122,14 +122,14 @@ img {
 }
 
 // Specify the color of the selection
-/* ::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-} */
+// ::-moz-selection {
+//  color: $black;
+//  background: $lightGray;
+// }
+// ::selection {
+//  color: $black;
+//  background: $lightGray;
+// } 
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
@@ -256,11 +256,11 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
+    margin: 0em 0em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 16px;
+    font-size: 15px;
     font-style: italic;
   }
 
