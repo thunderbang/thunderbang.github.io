@@ -8,10 +8,8 @@ This is one of the most important posts that I have read when I try to enter the
 Btw, Pedro Marcelino and I have a very similar background. We both majored in Civil Engineering, and worked as a Structural Engineer for a while. Pedro Marcelino has done a great job during his journey to Data Scientist and that is what I am going to do. I am enjoying this learning journey for now, and hope one day I could do something awesome with it. Then, I will have something to share with you.
 
 The original text is as follows:
----
 
-## Here is What 8 Experts Advise You to Do to Enter the Data Science World
-From **[Pedro Marcelino](http://pmarcelino.com/8-experts-advise-enter-data-science-world/)**
+---
 
 What should a smart, driven person do to enter the Data Science world? In 2013, when I started my Data Science journey, I had this question in mind. I am one of those people who believes that everything in life has a hack. It’s just a matter of googling the right keywords. So I was eagerly looking for those keywords that would unlock me the door to the Data Science world.
 
