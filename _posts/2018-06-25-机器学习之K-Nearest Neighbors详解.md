@@ -9,9 +9,9 @@ title: 机器学习之K-Nearest Neighbors详解
 <!--more-->
 **解答：** 收集跟我们房子条件差不多的一些房子信息，确定跟我们房子最相近的几个求定价的平均值，以此作为我们房子的租金。这就是K-Nearest Neighbors，k近邻算法。k-近邻算法的核心思想是未标记样本的类别，由距离其最近的k个邻居投票决定。
 
-![k-nearest neighbors algorithm](/images/knn.jpg)
+![k-nearest neighbors algorithm](/assets/post4-2018-06-25/knn.jpg)
 
-#### 1.根据k近邻算法定义直接编写代码。目标是理解逻辑关系，仅考虑单变量的影响。
+### 1.根据k近邻算法定义直接编写代码。目标是理解逻辑关系，仅考虑单变量的影响。
 ```python
 import pandas as pd
 import numpy as np
@@ -38,7 +38,7 @@ rmse = mse ** (1/2)
 print(rmse)
 ```
 
-#### 2. 利用sklearn.neighbors.KNeighborsRegressor()
+### 2. 利用sklearn.neighbors.KNeighborsRegressor()
 ```python
 import pandas as pd
 import numpy as np
@@ -82,7 +82,7 @@ print(mse)
 print(rmse)
 ```
 
-#### 3. 手动超参优化（Hyperparameter Optimization）
+### 3. 手动超参优化（Hyperparameter Optimization）
 ```python
 import pandas as pd
 train_df = pd.read_csv('dc_airbnb_train.csv')
@@ -105,7 +105,7 @@ for hp in hyper_params:
 plt.scatter(hyper_params, mse_values)
 ```
 
-#### 4. 交叉验证（Cross Validation）
+### 4. 交叉验证（Cross Validation）
 
 **holdout validation：训练集-验证集二划分验证**
 ```python
@@ -205,7 +205,7 @@ for fold in num_folds:
     print(str(fold), "folds: ", "avg RMSE: ", str(avg_rmse), "std RMSE: ", str(std_rmse))
 ```
 
-#### 5. 总结
+### 5. 总结
 
 从k-近邻算法的核心思想以及以上编码过程可以看出，该算法是基于实例的学习方法，因为它完全依靠训练集里的实例。该算法不需什么数学方法，很容易理解。但是非常不适合应用在大数据集上，因为k-近邻算法每一次预测都需要计算整个训练集的数据到待预测数据的距离，然后增序排列，计算量巨大。
 
