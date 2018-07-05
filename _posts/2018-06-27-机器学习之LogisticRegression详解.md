@@ -4,7 +4,7 @@ title: 机器学习之LogisticRegression详解
 ---
 
 
-逻辑回归使用了逻辑函数，将任意实数t（$ t \epsilon R $）输入，转化成0到1的实数值，逻辑函数一般采用Sigmoid函数，其表达式及示意图如下：
+逻辑回归使用了逻辑函数，将任意实数t（\[ t \epsilon R \]）输入，转化成0到1的实数值，逻辑函数一般采用Sigmoid函数，其表达式及示意图如下：
 <!--more-->
 \\[ \sigma(t)=\dfrac{e^t}{1+e^t} \\]
 ![Logistic function](/assets/post6-2018-06-27/Logistic-curve.png)
@@ -12,8 +12,10 @@ title: 机器学习之LogisticRegression详解
 
 ## 1. 二元分类
 
-本例所用数据表请右键点击下载：[admissions](/assets/post6-2018-06-27/admissions.csv)
+本例所用数据表请右键点击下载：[admissions.csv](/assets/post6-2018-06-27/admissions.csv)
+
 ![admissions](/assets/post6-2018-06-27/admissions.png)
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -61,11 +63,11 @@ print(accuracy)  #64.6%
 - Sensitivity or True Positive Rate - The proportion of applicants that were correctly admitted
 - Specificity or True Negative Rate - The proportion of applicants that were correctly rejected
 
-$$ TPR=\dfrac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} $$
+\\[ TPR=\dfrac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} \\]
 
 - How effective is this model at identifying positive outcomes?
 
-$$ TNR=\dfrac{\text{True Negatives}}{\text{False Positives} + \text{True Negatives}} $$
+\\[ TNR=\dfrac{\text{True Negatives}}{\text{False Positives} + \text{True Negatives}} \\]
 
 - How effective is this model at identifying negative outcomes?
 
@@ -89,7 +91,7 @@ print(specificity)
 
 ## 2. 多元分类
 
-本例所用数据表请右键点击下载：[auto](/assets/post6-2018-06-27/auto.csv)
+本例所用数据表请右键点击下载：[auto.csv](/assets/post6-2018-06-27/auto.csv)
 ![auto](/assets/post6-2018-06-27/auto.png)
 
 ```python
