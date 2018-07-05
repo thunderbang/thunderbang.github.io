@@ -5,7 +5,7 @@ title: 机器学习之LogisticRegression详解
 
 
 逻辑回归使用了逻辑函数，将任意实数t（$ t \epsilon R $）输入，转化成0到1的实数值，逻辑函数一般采用Sigmoid函数，其表达式及示意图如下：
-
+<!--more-->
 $$ \sigma(t)=\dfrac{e^t}{1+e^t} $$
 ![Logistic function](/assets/post6-2018-06-27/Logistic-curve.png)
 
@@ -105,7 +105,7 @@ cars = pd.concat([cars, dummy_cylinders], axis=1)
 dummy_years = pd.get_dummies(cars["year"], prefix="year")
 cars = pd.concat([cars, dummy_years], axis=1)
 cars = cars.drop("year", axis=1)
-cars = cars.drop("cylinde“)
+cars = cars.drop("cylinde")
 print(cars.head())
 
 # 划分training 和 test集

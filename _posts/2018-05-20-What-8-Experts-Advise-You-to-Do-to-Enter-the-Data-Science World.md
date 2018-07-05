@@ -4,7 +4,7 @@ title: What 8 Experts Advise You to Do to Enter the Data Science World
 ---
 
 This is one of the most important posts that I have read when I try to enter the Data Science world. Here I reprint it with the core points translated into Chinese so that it can give more people some kind of enlightenment. Highly recommend the *[original post](http://pmarcelino.com/8-experts-advise-enter-data-science-world/)* where you can access to more links. Great gratitute to the author **Pedro Marcelino** and his website [http://pmarcelino.com](http://pmarcelino.com) which is designed for helping people start a Machine Learning career. 
-
+<!--more-->
 Btw, Pedro Marcelino and I have a very similar background. We both majored in Civil Engineering, and worked as a Structural Engineer for a while. Pedro Marcelino has done a great job during his journey to Data Scientist and that is what I am going to do. I am enjoying this learning journey for now, and hope one day I could do something awesome with it. Then, I will have something to share with you.
 
 The original text is as follows:

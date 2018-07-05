@@ -4,7 +4,7 @@ title: 机器学习之LinearRegression详解
 ---
 
 线性回归模型和逻辑回归模型是一种参数机器学习方法。与k-近邻算法不同的是，该方法训练的结果是找到一个最能描述训练集的模式的数学函数。在机器学习里，这样的函数被称为模型。下载本文所需数据集请点击[AmesHousing.txt](/assets/AmesHousing.txt)
-
+<!--more-->
 ## 1. 一般工作流
 ```python
 import pandas as pd
