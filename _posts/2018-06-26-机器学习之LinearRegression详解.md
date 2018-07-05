@@ -101,13 +101,13 @@ print(sorted_vars)
 ## 3. 梯度下降（Gradient Descent）
 
 以一次线性方程为例（an与a1类似）:
-\\[ \hat{y} = a_1x_1 + a_0 
-MSE = \frac{1}{n} \sum_{i=1}^{n} ({\hat{y_i} - y_i})^2 
-MSE(a_0, a_1) = \frac{1}{n} \sum_{i=1}^{n} (a_0 + a_1x_1^{(i)} - y^{(i)} ) ^2 
-\frac{d}{da_1} MSE(a_0, a_1) = \frac{2}{n} \sum_{i=1}^{n} x_1^{(i)}(a_0 + a_1x_1^{(i)} - y^{(i)}) 
-\frac{d}{da_0} MSE(a_0, a_1) = \frac{2}{n} \sum_{i=1}^{n} (a_0 + a_1x_1^{(i)} - y^{(i)}) 
-a_0 := a_0 - \alpha \frac{d}{da_0} MSE(a_0, a_1) 
-a_1 := a_1 - \alpha \frac{d}{da_1} MSE(a_0, a_1) \\]
+\\[ \hat{y} = a_1x_1 + a_0 \\]
+\\[ MSE = \frac{1}{n} \sum_{i=1}^{n} ({\hat{y_i} - y_i})^2 \\]
+\\[ MSE(a_0, a_1) = \frac{1}{n} \sum_{i=1}^{n} (a_0 + a_1x_1^{(i)} - y^{(i)} ) ^2 \\]
+\\[ \frac{d}{da_1} MSE(a_0, a_1) = \frac{2}{n} \sum_{i=1}^{n} x_1^{(i)}(a_0 + a_1x_1^{(i)} - y^{(i)}) \\]
+\\[ \frac{d}{da_0} MSE(a_0, a_1) = \frac{2}{n} \sum_{i=1}^{n} (a_0 + a_1x_1^{(i)} - y^{(i)}) \\]
+\\[ a_0 := a_0 - \alpha \frac{d}{da_0} MSE(a_0, a_1) \\]
+\\[ a_1 := a_1 - \alpha \frac{d}{da_1} MSE(a_0, a_1) \\]
 
 Gradient Descent是一种Numerical solution，也就是数值解。根据以上公式编写代码：
 ```python
@@ -153,14 +153,14 @@ print(a1_params)
 ## 4. 普通最小二乘法(ordinary least squares estimation/ OLS)
 
 OLS是一种closed form solution，也就是解析解。其数学原理如下：
-\\[ \hat{y} = a_0 + a_1x_1 + a_2x_2 + ... + a_nx_n 
-Xa = \hat{y} 
-\epsilon = \hat{y} - y
-y = Xa - \epsilon 
-J(a) = \dfrac{1}{n} (Xa - y)^T(Xa - y) 
-\frac{dJ(a)}{da} = 2X^TXa - 2X^Ty 
-2X^TXa - 2X^Ty = 0 
-a = (X^TX)^{-1} X^Ty \\]
+\\[ \hat{y} = a_0 + a_1x_1 + a_2x_2 + ... + a_nx_n \\]
+\\[ Xa = \hat{y} \\]
+\\[ \epsilon = \hat{y} - y \\]
+\\[ y = Xa - \epsilon \\]
+\\[ J(a) = \dfrac{1}{n} (Xa - y)^T(Xa - y) \\]
+\\[ \frac{dJ(a)}{da} = 2X^TXa - 2X^Ty \\]
+\\[ 2X^TXa - 2X^Ty = 0 \\]
+\\[ a = (X^TX)^{-1} X^Ty \\]
 OLS最大的限制是计算复杂度太大，因为矩阵转置的计算复杂度为O(n^3)。所以OLS在数据集小于百万级广泛使用，而在更大级别的数据集中，梯度下降法应用广泛。此外，我们也可以设定阀值，减少计算成本获得近似解。
 
 ```python
