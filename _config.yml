@@ -16,6 +16,9 @@ avatar: https://avatars3.githubusercontent.com/u/38848282?s=400&u=cd36610f66565a
 #
 excerpt_separator: <!--more-->
 
+markdown: kramdown
+mathjax: true
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
