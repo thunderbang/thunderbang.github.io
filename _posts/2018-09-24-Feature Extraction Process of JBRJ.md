@@ -1,14 +1,17 @@
+---
+layout: post
+title: Feature Extraction Process of JBRJ
+---
 
-## <center>Feature Extraction Process of JBRJ</center>
 Notes: 
-    1.点击超链接可直达正文；
-    2.以下第二节中粗体为模型使用过的特征。
+1. 点击超链接可直达正文；
+2. 以下第二节中粗体为模型使用过的特征。
 ### 0、[Introduction](#0)
 
 ### 1、[Import related libraries & Define related function](#1)
 
 ### 2、[Feature extraction from jbrj database](#2)
-
+<!--more-->
 2.1、[t_voicecall](#2.1)
 - dial_ratio：通话记录中主叫次数/总通话次数
 - **dial_maxmin**：月通话主叫率极差
@@ -73,6 +76,9 @@ Notes:
 ## <span id='0'>0、Introduction</span>
 
 本产品反欺诈包含4个模型，每个模型包括GradientBoostingClassifier (GBDT)、XGBClassifier (XGboost)和RandomForestClassifier (RF)三种集成算法，结果由三个算法投票确定。不同模型特征略有差异，算法的阈值也不尽相同。
+
+
+```python
 V2.1.1:
     ['open_year', 'device_type', 'max_fee', 'contact1_num', 'city_num', 
      'xinyan_score', 'level_per_year_2_new', 'loan_30_num_2_new', 'poweroff_days',
@@ -101,6 +107,8 @@ notes:
                  level_per_year_2_new 改为 level_per_year_log
                  loan_30_num_2_new 改为 loan_30_num_log
                  contact1_num 改为 contact_1_times
+```
+
 ## <span id='1'>1、Import related libraries & Define related function</span>
 
 
@@ -163,7 +171,7 @@ def iv(dataframe,tag,cut = False, n = 10):
 
 
 ```python
-conn = pymysql.connect(host='rm-bp1f8p44f4wu92z91o.mysql.rds.aliyuncs.com',user='leipeng',password='Mysql000',db='jiabanriji',charset='utf8')
+conn = pymysql.connect(host='xxxxxx',user='xxx',password='xxx',db='xxx',charset='utf8')
 ```
 
 ## <span id='2'>2、Feature extraction from jbrj database</span>
