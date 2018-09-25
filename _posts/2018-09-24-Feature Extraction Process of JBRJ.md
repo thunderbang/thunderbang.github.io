@@ -3,15 +3,16 @@ layout: post
 title: Feature Extraction Process of JBRJ
 ---
 
-Notes: 
+**Notes**: 
 1. 点击超链接可直达正文；
 2. 以下第二节中粗体为模型使用过的特征。
-### 0、[Introduction](#0)
 
+### 0、[Introduction](#0)
+<!--more-->
 ### 1、[Import related libraries & Define related function](#1)
 
 ### 2、[Feature extraction from jbrj database](#2)
-<!--more-->
+
 2.1、[t_voicecall](#2.1)
 - dial_ratio：通话记录中主叫次数/总通话次数
 - **dial_maxmin**：月通话主叫率极差
